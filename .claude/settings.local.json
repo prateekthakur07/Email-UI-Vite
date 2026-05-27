@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run dev)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 10; Write-Output \"INDEX status: $\\($r.StatusCode\\)\"; if \\($r.Content -match 'id=\"root\"'\\) { Write-Output \"root div: OK\" } } catch { Write-Output \"INDEX error: $_\" }; try { $m = Invoke-WebRequest -Uri \"http://localhost:5173/src/main.jsx\" -UseBasicParsing -TimeoutSec 10; Write-Output \"main.jsx status: $\\($m.StatusCode\\)\" } catch { Write-Output \"main.jsx error: $_\" })",
+      "PowerShell(Move-Item \"c:\\\\Users\\\\admin\\\\Desktop\\\\neww\\\\mailzen-react\\\\src\\\\data\\\\content.js\" \"c:\\\\Users\\\\admin\\\\Desktop\\\\neww\\\\mailzen-react\\\\src\\\\data\\\\content.jsx\" -Force)"
+    ]
+  }
+}
