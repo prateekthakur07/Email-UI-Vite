@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mailzen — React (Vite)
 
 The Mailzen deliverability landing page (light theme), packaged as a React + Vite app you can run locally.
@@ -76,3 +77,6 @@ mailzen-react/
   the exported arrays in `src/data/content.jsx` — no component changes needed.
 - Interactive state (mobile menu, pricing toggle, FAQ accordion) is plain React
   `useState`; scroll/animation side-effects are isolated in `src/hooks/`.
+=======
+# Email-UI-Vite
+>>>>>>> a2b6b43d95f4996469de506a93a2523713047ee0
