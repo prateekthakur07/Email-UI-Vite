@@ -33,8 +33,8 @@ export default function Pricing() {
           <button id="mBtn" className="btn" style={toggleBtn(!yearly)} onClick={() => setYearly(false)}>
             Monthly
           </button>
-          <button id="yBtn" className="btn" style={toggleBtn(yearly)} onClick={() => setYearly(true)}>
-            Yearly <span style={{ color: 'var(--accent)', fontSize: 11 }}>−20%</span>
+          <button  id="yBtn" className="btn" style={toggleBtn(yearly)} onClick={() => setYearly(true)}>
+            Yearly <span style={{ color: yearly ? '#fff' : 'var(--accent)', fontSize: 11 }}>−20%</span>
           </button>
         </div>
       </div>
