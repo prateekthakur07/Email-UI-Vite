@@ -1,4 +1,5 @@
 import { footerColumns } from '../data/content.jsx';
+import { BrandLogo } from './icons.jsx';
 
 export default function Footer() {
   return (
@@ -8,17 +9,9 @@ export default function Footer() {
           <div>
             <a
               href="#"
-              style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', marginBottom: 16 }}
+              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', marginBottom: 16 }}
             >
-              <div
-                style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 8,
-                  background: 'linear-gradient(135deg,var(--accent),var(--accent-2))',
-                }}
-              />
-              <span style={{ fontFamily: "'Sora'", fontWeight: 700, fontSize: 18, color: 'var(--text)' }}>Mailzen</span>
+              <BrandLogo box={30} radius={8} text={18} />
             </a>
             <p className="muted" style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 280 }}>
               The premium deliverability operating system for high-performance sales and growth teams.

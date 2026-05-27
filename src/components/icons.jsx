@@ -69,3 +69,22 @@ export function PlusIcon({ size = 20 }) {
     </svg>
   );
 }
+
+// Brand logo: a white envelope inside a gradient tile + the two-tone "Mailzen"
+// wordmark ("Mail" in text colour, "zen" in the accent gradient). Sizing props
+// let each placement (navbar / footer / dashboard sidebar) scale it.
+export function BrandLogo({ box = 32, radius = 9, text = 19, gap = 10 }) {
+  return (
+    <span className="brand" style={{ gap }}>
+      <span className="brand-icon" style={{ width: box, height: box, borderRadius: radius }}>
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2.5" />
+          <path d="M3.5 7.5l8.5 6 8.5-6" />
+        </svg>
+      </span>
+      <span className="brand-word" style={{ fontSize: text }}>
+        Mail<span className="brand-grad">zen</span>
+      </span>
+    </span>
+  );
+}

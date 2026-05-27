@@ -24,7 +24,7 @@ export default function Testimonials() {
           >
             <div>
               <div style={{ color: 'var(--accent)', fontSize: 18, marginBottom: 14 }}>★★★★★</div>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: '#cfd5e2', margin: '0 0 24px' }}>"{t.quote}"</p>
+              <p style={{ fontSize: 15, lineHeight: 1.65, color: 'var(--text)', margin: '0 0 24px' }}>"{t.quote}"</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <div
